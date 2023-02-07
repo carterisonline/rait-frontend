@@ -1,0 +1,22 @@
+---
+const { title, center } = Astro.props;
+import '../bg-patterns.css';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<div
+			class={`place-items-center content-center w-screen h-screen p-10 bg-topography ${
+				center ? 'grid' : ''
+			}`}
+		>
+			<slot />
+		</div>
+	</body>
+</html>

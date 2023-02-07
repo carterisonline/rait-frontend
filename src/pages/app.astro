@@ -1,0 +1,38 @@
+---
+import Message from '../components/Message';
+import Profile from '../components/Profile';
+import MainPage from '../layouts/MainPage.astro';
+---
+
+<MainPage title="App">
+	<div class="flex w-full h-full space-x-4">
+		<div class="outline rounded-lg shadow-xl outline-slate-500 flex flex-col backdrop-blur-sm">
+			<img src="/banner1.png" class="w-80 h-32 overflow-hidden z-0 object-cover rounded-t-lg" />
+			<div class="absolute left-0 top-0 z-10 w-80 h-32 rounded-t-lg bg-gradient-to-b from-[#64748b20] to-slate-600 border-b-4 border-slate-500 shadow-sm"></div>
+			<div class="absolute top-8 left-1/2 transform -translate-x-1/2 text-xl z-20">
+				<p class="text-white font-black text-shadow-lg shadow-slate-900 grid place-items-center content-center">Test Server</p>
+				<p class="mt-2 text-slate-200 text-sm flex justify-center bg-gradient-to-br from-indigo-600 to-indigo-700 rounded-full shadow-xl">4 Members</p>
+			</div>
+
+			<div class="flex flex-col ml-4 mt-4 space-y-4">
+				<Profile icon="/prof1.webp" name="carterisonline" email="me@carteris.online" />
+				<Profile icon="https://picsum.photos/200" name="robob" email="robo@carteris.online" />
+				<Profile icon="https://picsum.photos/100" name="realperson1" email="togigal398@breazeim.com" />
+				<Profile icon="https://picsum.photos/150" name="frank" email="fejeho6648@chotunai.com" />
+			</div>
+		</div>
+		<div class="grow p-6 ring-2 rounded-lg shadow-xl ring-slate-500 from-slate-800 to-slate-900 bg-gradient-to-br flex sm:flex-row flex-col">
+			<div class="flex flex-col w-full">
+				<div class="grow bg-transparent space-y-4">
+					<Message icon="https://picsum.photos/150" name="frank" time="Today at 6:30pm" message="haha yo what's up real friend carter" />
+					<Message icon="/prof1.webp" name="carterisonline" time="Today at 6:30pm" message="not much frank, what do you want to talk about today :)" />
+					<Message icon="https://picsum.photos/150" name="frank" time="Today at 6:31pm" message="the industrial revolution and its consequences" />
+					<Message icon="https://picsum.photos/200" name="robob" time="Today at 6:31pm" message="no frank stop" />
+					<Message icon="https://picsum.photos/100" name="realperson1" time="Today at 6:31pm" message="omg based" />
+					<Message icon="/prof1.webp" name="carterisonline" time="" message="live carter reac" />
+				</div>
+				<input type="text" placeholder="Message" class="grow-0 outline-slate-700 outline outline-2 rounded-md p-4 bg-slate-900 text-white shadow-xl" />
+			</div>
+		</div>
+	</div>
+</MainPage>

@@ -1,0 +1,19 @@
+---
+import LoginForm from '../components/LoginForm';
+import NumOnline from '../components/NumOnline';
+import MainPage from '../layouts/MainPage.astro';
+---
+
+<MainPage title="Frontend" center>
+	<div class="flex sm:flex-row flex-col mb-20">
+		<h1
+			class="text-indigo-100 font-black text-4xl text-shadow-xl shadow-indigo-800"
+		>
+			Login or Signup
+		</h1>
+
+		<NumOnline client:load />
+	</div>
+
+	<LoginForm client:load />
+</MainPage>

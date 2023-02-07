@@ -1,0 +1,36 @@
+{
+  "name": "@example/with-tailwindcss",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/solid-js": "^2.0.0",
+    "@astrojs/tailwind": "^3.0.0",
+    "@types/canvas-confetti": "^1.6.0",
+    "a17t": "^0.10.1",
+    "astro": "^2.0.1",
+    "autoprefixer": "^10.4.13",
+    "canvas-confetti": "^1.6.0",
+    "postcss": "^8.4.21",
+    "solid-js": "^1.6.9",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-fluid-type": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": ">=7.20.12 <8.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-solid": "^0.9.3",
+    "typescript": ">=2.8.0"
+  }
+}
